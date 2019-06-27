@@ -3,7 +3,7 @@
     <v-toolbar flat>
       <v-toolbar-title>
         <NuxtLink to="/">
-         <v-img src="https://ik.imagekit.io/qpt2onjfe/Component_2_RlQmECk7A.png" style="width:150px;height:auto;" />
+         <v-img src="https://ik.imagekit.io/qpt2onjfe/Component_2_RlQmECk7A.png" style="width:180px;height:auto;" />
         </NuxtLink>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -31,5 +31,8 @@ a {
 }
 .container {
   margin-top: 0;
+}
+.footer{
+  bottom: 0;
 }
 </style>

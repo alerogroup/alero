@@ -1,0 +1,22 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  }
+  .details{
+    display:flex;
+    flex-flow: column;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center
+  }
+  .green_title{
+     font-size: 55px;
+     color: #3B6C39;
+  }
+
+  .information{
+    font-size: 24px;
+    width: 60rem;
+    text-align: center;
+    padding: 10px;
+  }

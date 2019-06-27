@@ -1,10 +1,10 @@
 <template>
  <v-layout column align-center justify-center>
 <div class="back">
- <img src="https://ik.imagekit.io/qpt2onjfe/icon__Q5MYRGlUk.png"  class="image animation bounce">
+ <img src="https://ik.imagekit.io/qpt2onjfe/icon__Q5MYRGlUk.png" height="300"  class="image animated bounce slower infinite">
 
-<div class="title-one">
-  <h3 class="subtitle is-white">This website is</h3>
+<div class="title-one title-two">
+  <h3 class="subtitle is-white">Site</h3>
   <h1 class="main-title is-white">Under constriction</h1>
   <h3 class="subtitle is-white">Stay tuned..</h3>
 </div>
@@ -14,6 +14,8 @@
 
 
 <style>
+@import '../assets/js/animate.css';
+
   .back {
     height: 100vh;
     width: 100vw;
@@ -25,7 +27,11 @@
 .image{
   display: flex;
   position: relative;
-
+  width: auto;
+  height: 450px;
+  width: auto;
+  top:6%;
+  left: 9%;
 }
 
 .title-one {
@@ -47,55 +53,24 @@ align-items: center
   font-size: 60px;
 }
 
-/* animation */
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0);
-  }
-
-  40%,
-  43% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, -4px, 0);
-  }
-}
-
-.bounce {
-  animation-name: bounce;
-  transform-origin: center bottom;
-}
-
-
-
 /* moving the txt elements with media quaries */
 
-@media screen and (min-device-width: 500px) and
-(min-device-width: 1080px){
+@media screen and (min-device-width: 644px)
+and (min-device-width: 1199px)
+and (-webkit-min-device-pixel-ratio: 1) {
 
- .title-one {
-    left: 25%;
-    bottom: 270px;
+    .title-two {
+    left: 10%;
+    bottom: 10%;
     }
 
-    .image {
-      top:60%;
-      left: 10%;
-    }
+    .image  {
+      height: 450px;
+      width: auto;
+      top:6%;
+      left: 9%;
 
+    }
 }
 
 @media screen and (min-device-width: 1200px)
@@ -103,18 +78,18 @@ align-items: center
   and (-webkit-min-device-pixel-ratio: 1) {
 
     .title-one {
-    left: 25%;
-    bottom: 290px;
+    left: 20%;
+    bottom: 320px;
     }
 
-    .image {
+     .image {
       height: 500px;
-      top:58%;
+      width: auto;
+      top:34%;
       left: 9%;
     }
   }
 
-/* ----------- Nexus 7 ----------- */
 
 
 
