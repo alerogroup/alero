@@ -5,7 +5,7 @@
 
 <div class="title-one title-two">
   <h3 class="subtitle is-white">Site</h3>
-  <h1 class="main-title is-white">Under constriction</h1>
+  <h1 class="main-title is-white">Under Construction</h1>
   <h3 class="subtitle is-white">Stay tuned..</h3>
 </div>
 </div>
@@ -14,8 +14,7 @@
 
 
 <style>
-@import '../assets/js/animate.css';
-
+@import "../assets/style/animate.css";
   .back {
     height: 100vh;
     width: 100vw;
@@ -29,7 +28,6 @@
   position: relative;
   width: auto;
   height: 450px;
-  width: auto;
   top:6%;
   left: 9%;
 }
@@ -89,9 +87,4 @@ and (-webkit-min-device-pixel-ratio: 1) {
       left: 9%;
     }
   }
-
-
-
-
-
 </style>

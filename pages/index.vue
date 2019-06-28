@@ -1,8 +1,10 @@
 <template>
 <v-content>
+  
   <section>
     <Appheader />
   </section>
+
   <section class="down">
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
@@ -16,8 +18,14 @@
     </v-flex>
   </v-layout>
 </section>
+
   <section>
     <Logos />
+  </section>
+
+    <ContactInfo />
+  <section>
+
   </section>
 </v-content>
 </template>
@@ -25,8 +33,15 @@
 <script>
 import Appheader from '../components/header';
 import Logos from '../components/clientslogos';
+import ContactInfo from '../components/contactInfo';
 
 export default {
+  head: {
+    title: 'Alero Group | This Site is Under Construction',
+    meta: [
+      { hid: 'constructionHome', name: 'alero home under construction', content: 'Alero Group website is under construction' }
+    ]
+  },
   asyncData() {
   return new Promise((resolve) => {
     setTimeout(function () {
@@ -38,6 +53,7 @@ export default {
   components: {
     Appheader,
     Logos,
+    ContactInfo
   }
 }
 </script>
