@@ -1,6 +1,5 @@
 <template>
 <v-content>
-  
   <section>
     <Appheader />
   </section>
@@ -63,7 +62,7 @@ export default {
 body {
 font-family: 'Montserrat', sans-serif;
 }
-.details{
+.details {
   display:flex;
   flex-flow: column;
   position: relative;

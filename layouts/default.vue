@@ -7,7 +7,7 @@
         </NuxtLink>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-
+         <NuxtLink to="/about"><v-btn flat color="#6A9369" > About</v-btn></NuxtLink>
       <NuxtLink to="/contactus"><v-btn outline color="#6A9369" > Talk to us</v-btn></NuxtLink>
 
 
@@ -20,9 +20,9 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; Alero Group Ltd. </span>
-      <span>Licence</span>
-      <span></span>
+      <span>&copy; Alero Group Ltd </span>
+      <span> Licence</span>
+
     </v-footer>
   </v-app>
 </template>
