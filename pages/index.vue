@@ -38,7 +38,9 @@ export default {
   head: {
     title: 'Alero Group | This Site is Under Construction',
     meta: [
-      { hid: 'constructionHome', name: 'alero home under construction', content: 'Alero Group website is under construction' }
+      { hid: 'constructionHome', name: 'alero home under construction', content: 'Alero Group website is under construction' },
+      
+      { hid: 'google-site-verification', name: 'google-site-verification', content: 'B_5KQRyRmfrcsYNjxPFRH6SbJxuCSQUzegVL44RePfo'}
     ]
   },
   asyncData() {
