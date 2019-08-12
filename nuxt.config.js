@@ -12,7 +12,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'description', name: 'google-site-verification', content: 'VFBmJ73rVpSlREwokm_IiOWVjsQITOr1Hb-_R9IGheo' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
