@@ -7,8 +7,10 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production node server/index.js",
-    "generate": "nuxt generate"
+    "start:prod": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
