@@ -1,8 +1,6 @@
 <template>
   <v-content>
-    <v-img
-      src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/head_image_1QeZsFZKT.svg"
-    >
+    <v-img :src="image">
       <Appheader style="margin-top:3%;" />
       <v-layout align-center>
         <img />
@@ -106,20 +104,24 @@ export default {
     Logos,
     TalktoUs
   },
-
+data() {
+        return {
+          image: require('../assets/img/head_image.svg')
+        }
+    },
   asyncData() {
     return new Promise(resolve => {
       setTimeout(function() {
         resolve({ name: 'world' })
-      }, 1200)
+      }, 500)
     })
   },
-  mounted() {
+ /*  mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+      setTimeout(() => this.$nuxt.$loading.finish(), 1500)
     })
-  }
+  } */
 }
 </script>
 
