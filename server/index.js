@@ -1,7 +1,6 @@
 const express = require('express')
 const consola = require('consola')
-// const bodyParser = require('body-parser')
-// const nodemailer = require('nodemailer')
+
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 
