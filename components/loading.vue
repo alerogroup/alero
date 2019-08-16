@@ -49,5 +49,5 @@ export default {
 .loading-text {
   color: #d4d4d4;
   font-size: 20px;
-}</style
->.
+}
+</style>

@@ -33,7 +33,14 @@ export default {
 /* eslint-disable */
   components: {
     Appheader
-  }
+  },
+ asyncData() {
+    return new Promise(resolve => {
+      setTimeout(function() {
+        resolve({ name: '/vodcast' })
+      }, 1500)
+    })
 
+}
 }
 </script>

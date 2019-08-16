@@ -11,9 +11,8 @@
 import Footer from '~/components/footer/footer'
 
 export default {
-  /* eslint-disable */
   components: {
     Footer
-  },
   }
+}
 </script>

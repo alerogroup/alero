@@ -2,7 +2,7 @@
   <v-flex xs12 fluid>
     <v-toolbar flat color="transparent">
       <v-toolbar-title>
-        <nuxt-link to="/">
+        <nuxt-link to="/home">
           <img src="../../assets/img/logo.svg" alt="Alerologo" height="90" />
         </nuxt-link>
       </v-toolbar-title>
