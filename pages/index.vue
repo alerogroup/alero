@@ -106,7 +106,7 @@ export default {
   },
 data() {
         return {
-          image: require('../assets/img/head_image.svg')
+          image: require('../assets/img/head_image2.png')
         }
     },
   asyncData() {
