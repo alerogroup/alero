@@ -1,88 +1,145 @@
 <template>
-<v-content>
-  <section>
-    <Appheader />
-  </section>
+  <v-content>
+    <v-img
+      src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/head_image_1QeZsFZKT.svg"
+    >
+      <Appheader style="margin-top:3%;" />
+      <v-layout align-center>
+        <img />
+      </v-layout>
+      <v-layout
+        hidden-sm-and-down
+        align-end
+        justify-end
+        style="margin-right:15%;"
+      >
+        <v-card flat color="transparent" dark>
+          <v-card-text
+            class="display-2 font-weight-bold"
+            style="margin-top:12%;"
+          >
+            We design, We build <br />
+            digital products
+          </v-card-text>
+        </v-card>
+      </v-layout>
+    </v-img>
+    <v-layout hidden-sm-and-down style="height:300px">
+      <img
+        src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/icon_x8mmBxr5E.png"
+        class="image animated bounce slower infinite"
+      />
+    </v-layout>
 
-  <section class="down">
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="details">
-      <h1 class="green_title">We Provide Creative & Strategic Solutions</h1>
-      <p class="information"> We design, build and manage our clients products.
-      Helping them take their website, and product ideas from zero to unique
-      quality tech products.
-      </p>
-      </div>
-    </v-flex>
-  </v-layout>
-</section>
+    <v-layout
+      column
+      justify-center
+      align-center
+      text-lg-center
+      text-md-center
+      text-xs-center
+      style="margin-top:1%;"
+    >
+      <v-flex xs10 md4>
+        <div class="display-2 font-weight-bold alero-style">
+          Providing Innovative, Creative & <br />
+          Strategic Solutions
+        </div>
+      </v-flex>
+      <v-flex xs10 md4 style="margin-top:2%">
+        <div class="title font-weight-regular">
+          We design, build and manage our clients digital products. We can
+          transform <br />
+          your ideas from zero to quality digital products.
+        </div>
+      </v-flex>
 
-  <section>
-    <Logos />
-  </section>
+      <v-layout hidden-sm-and-down column style="margin-top:10%">
+        <div class="ourclients font-weight-bold">
+          Our Clients & Products
+        </div>
+        <Logos />
+      </v-layout>
 
-    <ContactInfo />
-  <section>
-
-  </section>
-</v-content>
+      <v-layout column style="margin-top:5%">
+        <FirstFeaturedPost />
+      </v-layout>
+    </v-layout>
+    <TalktoUs />
+  </v-content>
 </template>
 
 <script>
-import Appheader from '../components/header';
-import Logos from '../components/clientslogos';
-import ContactInfo from '../components/contactInfo';
+import FirstFeaturedPost from '~/components/featured_posts/post_1'
+import Appheader from '~/components/header/header_1'
+import Logos from '~/components/clientslogos'
+import TalktoUs from '~/components/contact'
+/** Featured Posts **/
 
 export default {
   head: {
-    title: 'Alero Group | This Site is Under Construction',
+    title: 'Alero | Welcome',
     meta: [
-      { hid: 'constructionHome', name: 'alero home under construction', content: 'Alero Group website is under construction' },
+      {
+        hid: 'constructionHome',
+        name: 'alero home under construction',
+        content: 'Alero Group website is under construction'
+      },
 
-      { hid: 'google-site-verification', name: 'google-site-verification', content: 'B_5KQRyRmfrcsYNjxPFRH6SbJxuCSQUzegVL44RePfo'},
-      { hid: 'google-site-verification', name: 'google-site-verification', content: 'VFBmJ73rVpSlREwokm_IiOWVjsQITOr1Hb-_R9IGheo' }
+      {
+        hid: 'google-site-verification',
+        name: 'google-site-verification',
+        content: 'B_5KQRyRmfrcsYNjxPFRH6SbJxuCSQUzegVL44RePfo'
+      },
+
+      {
+        hid: 'google-site-verification',
+        name: 'google-site-verification',
+        content: 'VFBmJ73rVpSlREwokm_IiOWVjsQITOr1Hb-_R9IGheo'
+      }
     ]
   },
-  asyncData() {
-  return new Promise((resolve) => {
-    setTimeout(function () {
-      resolve({ name: 'world' })
-    }, 1200)
-  })
-  },
-
+/* eslint-disable */
   components: {
     Appheader,
+    FirstFeaturedPost,
     Logos,
-    ContactInfo
+    TalktoUs
+  },
+
+  asyncData() {
+    return new Promise(resolve => {
+      setTimeout(function() {
+        resolve({ name: 'world' })
+      }, 1200)
+    })
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>
 
-
 <style scoped>
-body {
-font-family: 'Montserrat', sans-serif;
+@import '../assets/style/animate.css';
+.flex {
+  color: #17311b;
 }
-.details {
-  display:flex;
-  flex-flow: column;
+.image {
   position: relative;
-  justify-content: center;
-  align-content: center;
-  align-items: center
+  width: auto;
+  height: 480px;
+  top: -200px;
+  bottom: 0px;
+  margin-left: 9%;
 }
-.green_title{
-   font-size: 55px;
-   color: #3B6C39;
+.alero-style {
+  color: #3b6c39;
 }
-
-.information{
-  font-size: 24px;
-  width: 60rem;
-  text-align: center;
-  padding: 10px;
+.ourclients {
+  font-size: 28px;
 }
 </style>
-

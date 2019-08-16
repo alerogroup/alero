@@ -1,8 +1,30 @@
 <template>
-    <div class="load">
-      <!-- <img src="../assets/img/loading.png" alt="" width="140" class="animated flip infinite loading">
-        <div class="loading-text">Loading...</div> -->
-      </div>
+  <v-container v-if="loading">
+    <v-content style="margin-top:20%;">
+      <v-layout justify-center>
+        <v-flex xs12 md4>
+          <v-layout column justify-center align-center style="margin-top:10%;">
+            <v-card flat color="transparent">
+              <img
+                contain
+                height="auto"
+                src="../assets/img/loading.png"
+                width="80"
+                class="animated flip infinite loading"
+              />
+            </v-card>
+            <v-card flat color="transparent" style="margin-top:3%;">
+              <v-card-text>
+                <div class="loading-text headline">
+                  Loading...
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-content>
+  </v-container>
 </template>
 
 <script>
@@ -12,7 +34,7 @@ export default {
   }),
   methods: {
     start() {
-      this.loading = false
+      this.loading = true
     },
     finish() {
       this.loading = false
@@ -22,27 +44,10 @@ export default {
 </script>
 
 <style scoped>
-
-
-
-
-@import "../assets/style/animate.css";
-
-.load {
-display: flex;
-position: relative;
-flex-direction: column;
-justify-content: center;
-align-content: center;
-align-items: center;
-top: 40%;
-max-width: 100vw;
-}
+@import '../assets/style/animate.css';
 
 .loading-text {
-  display: flex;
-  margin-top: 100px;
-  color: #D4D4D4;
+  color: #d4d4d4;
   font-size: 20px;
-}
-</style>
+}</style
+>.
