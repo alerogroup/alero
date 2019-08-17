@@ -3,7 +3,7 @@
     <v-toolbar flat color="transparent">
       <v-toolbar-title>
         <nuxt-link to="/home">
-          <img src="../../assets/img/logo.svg" alt="Alerologo" height="90" />
+          <img src="../../assets/img/logo.svg" alt="alero logo" height="90" />
         </nuxt-link>
       </v-toolbar-title>
       <v-spacer />

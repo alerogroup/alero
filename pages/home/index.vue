@@ -1,6 +1,9 @@
 <template>
   <v-content>
-    <v-img :src="image">
+    <v-img
+      src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/head_image_small_eNqRIQZk1.svg"
+      alt="alero offices in nairobi"
+    >
       <Appheader style="margin-top:3%;" />
       <v-layout align-center>
         <img />
@@ -24,8 +27,9 @@
     </v-img>
     <v-layout hidden-sm-and-down style="height:300px">
       <img
-        src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/icon_x8mmBxr5E.png"
+        src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/icon_hyb1kugL9.png"
         class="image animated bounce slower infinite"
+        alt="alero isomatrics"
       />
     </v-layout>
 
@@ -58,9 +62,10 @@
         </div>
         <Logos />
       </v-layout>
-
       <v-layout column style="margin-top:5%">
-        <FirstFeaturedPost />
+        <div class="ourclients font-weight-bold">
+          Featured Vodcasts
+        </div>
       </v-layout>
     </v-layout>
     <TalktoUs />
@@ -68,7 +73,6 @@
 </template>
 
 <script>
-import FirstFeaturedPost from '~/components/featured_posts/post_1'
 import Appheader from '~/components/header/header_1'
 import Logos from '~/components/clientslogos'
 import TalktoUs from '~/components/contact'
@@ -83,7 +87,16 @@ export default {
         name: 'alero home under construction',
         content: 'Alero Group website is under construction'
       },
-
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Website design, UI/UX design, web applications'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'alero welcome page'
+      },
       {
         hid: 'google-site-verification',
         name: 'google-site-verification',
@@ -100,15 +113,12 @@ export default {
 /* eslint-disable */
   components: {
     Appheader,
-    FirstFeaturedPost,
     Logos,
     TalktoUs
   },
 data() {
-    return {
-      image: require('../../assets/img/head_image.svg')
-    }
-    },
+   //
+},
  /*  mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
@@ -119,6 +129,7 @@ data() {
 </script>
 
 <style scoped>
+@import '../../assets/style/animate.css';
 .flex {
   color: #17311b;
 }

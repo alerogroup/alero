@@ -12,18 +12,33 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+    title: 'Alero Group',
+    meta: [{
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: pkg.description
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Alero Group is a digital solution agancy'
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    link: [{
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
       },
       {
         rel: 'stylesheet',
@@ -34,8 +49,9 @@ module.exports = {
 
   /*
    ** Customize the progress-bar color
-   */
-  loading: '~/components/loading.vue',
+
+  loading: '~/components/loading.vue', */
+  loading: false,
 
   /*
    ** Global CSS
@@ -58,8 +74,7 @@ module.exports = {
     [
       'nuxt-fontawesome',
       {
-        imports: [
-          {
+        imports: [{
             set: '@fortawesome/free-solid-svg-icons',
             icons: ['fas']
           },

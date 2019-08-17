@@ -1,12 +1,12 @@
 <template>
   <v-content>
-    <Appheader style="margin-top:3%;" />
+    <Appheader style="margin-top:2%;" />
     <v-layout justify-center>
-      <v-flex xs12 md4>
+      <v-flex xs12 md6>
         <v-layout column justify-center align-center style="margin-top:10%;">
           <v-card flat color="transparent" style="margin-top:3%;">
             <v-card-text class="display-1">
-              Coming Soon...
+              This page is coming soon...
             </v-card-text>
           </v-card>
         </v-layout>
@@ -21,7 +21,7 @@ import Appheader from '~/components/header/header_1'
 
 export default {
   head: {
-    title: 'Alero | Our vodcasts',
+    title: 'Alero | About us',
     meta: [
       {
         hid: 'constructionHome',
@@ -34,5 +34,6 @@ export default {
   components: {
     Appheader
   }
+
 }
 </script>
