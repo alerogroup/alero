@@ -1,6 +1,7 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const siteConfig = require('./config/site')
 const analyticsID = 'UA-143741549-1'
+const googleAdClient = 'ca-pub-1508072306809427'
 const siteUrl = 'https://www.alero.co.ke'
 require('dotenv').config()
 // ./nuxt.config.js
@@ -11,18 +12,16 @@ module.exports = {
   watch: ['~/config/*'],
 
   env: {
-    baseUrl:
-      process.env.NODE_ENV === 'production'
-        ? `${siteConfig.url}/`
-        : 'http://localhost:3000/'
+    baseUrl: process.env.NODE_ENV === 'production' ?
+      `${siteConfig.url}/` :
+      'http://localhost:3000/'
   },
   /*
    ** Headers of the page
    */
   head: {
     title: 'Alero Group',
-    meta: [
-      {
+    meta: [{
         charset: 'utf-8'
       },
       {
@@ -41,8 +40,7 @@ module.exports = {
       {
         hid: 'robots',
         name: 'robots',
-        content:
-          siteConfig.index === false ? 'noindex,nofollow' : 'index,follow'
+        content: siteConfig.index === false ? 'noindex,nofollow' : 'index,follow'
       },
       {
         property: 'og:type',
@@ -60,10 +58,9 @@ module.exports = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content:
-          process.env.NODE_ENV === 'production'
-            ? `${siteConfig.url}/${siteConfig.ogImage}`
-            : `http://localhost:3000/${siteConfig.ogImage}`
+        content: process.env.NODE_ENV === 'production' ?
+          `${siteConfig.url}/${siteConfig.ogImage}` :
+          `http://localhost:3000/${siteConfig.ogImage}`
       },
 
       {
@@ -83,16 +80,14 @@ module.exports = {
         content: 'VFBmJ73rVpSlREwokm_IiOWVjsQITOr1Hb-_R9IGheo'
       }
     ],
-    link: [
-      {
+    link: [{
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
       },
       {
         rel: 'stylesheet',
@@ -123,12 +118,12 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    '@nuxtjs/google-adsense',
     '@nuxtjs/google-analytics',
     [
       'nuxt-fontawesome',
       {
-        imports: [
-          {
+        imports: [{
             set: '@fortawesome/free-solid-svg-icons',
             icons: ['fas']
           },
@@ -159,6 +154,9 @@ module.exports = {
     hostname: siteUrl
   },
 
+  'google-adsense': {
+    id: googleAdClient
+  },
   /*
    ** Build configuration
    */

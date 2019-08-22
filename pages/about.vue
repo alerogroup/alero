@@ -199,14 +199,14 @@
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/57ca72a0ff497eb25e138c0568af6e3c_cf8Fk4fLc.png"
-              alt=""
+              alt="Alero offices and team"
               width="320"
             />
           </v-flex>
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/094e3ec5bb12bafe7ebf511fcaae9c6a_q-grxs0Qo.png"
-              alt=""
+              alt="Alero offices and team"
               width="320"
             />
           </v-flex>
@@ -215,14 +215,14 @@
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/3279c4e0b87172bc90311531c137fc0c_d-bO52z9J.png"
-              alt=""
+              alt="Alero offices and team"
               width="540"
             />
           </v-flex>
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/4c0f356cf249b3ad96ecbd8b3d1787cd_-DdW6c22A.png"
-              alt=""
+              alt="Alero offices and team"
               width="540"
             />
           </v-flex>
@@ -238,14 +238,14 @@
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/57ca72a0ff497eb25e138c0568af6e3c_cf8Fk4fLc.png"
-              alt=""
+              alt="Alero offices and team"
               width="200"
             />
           </v-flex>
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/094e3ec5bb12bafe7ebf511fcaae9c6a_q-grxs0Qo.png"
-              alt=""
+              alt="Alero offices and team"
               width="200"
             />
           </v-flex>
@@ -254,14 +254,14 @@
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/3279c4e0b87172bc90311531c137fc0c_d-bO52z9J.png"
-              alt=""
+              alt="Alero offices and team"
               width="340"
             />
           </v-flex>
           <v-flex xs4 md5>
             <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/4c0f356cf249b3ad96ecbd8b3d1787cd_-DdW6c22A.png"
-              alt=""
+              alt="Alero offices and team"
               width="340"
             />
           </v-flex>
