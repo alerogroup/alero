@@ -8,7 +8,7 @@
       </v-toolbar-title>
       <v-spacer />
       <v-layout justify-end hidden-xs-only>
-        <nuxt-link to="/about" style="text-decoration:none;">
+        <nuxt-link to="/about" style="text-decoration:none;" no-prefetch>
           <v-btn flat class="title font-weight-medium text-capitalize">
             About
           </v-btn>

@@ -32,6 +32,7 @@
     "nuxt": "^2.8.1",
     "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^7.1.0",
+    "vue-analytics": "^5.17.2",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"
   },

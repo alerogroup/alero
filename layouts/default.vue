@@ -1,7 +1,7 @@
 <template>
   <v-app class="transparent">
     <v-content>
-      <nuxt />
+      <nuxt ref="page" />
     </v-content>
     <Footer />
   </v-app>

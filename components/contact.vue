@@ -23,17 +23,16 @@
       <v-flex xs12 md4>
         <v-card flat color="transparent">
           <v-card-actions>
-            <nuxt-link to="/contact" style="text-decoration:none">
-              <v-btn
-                class="subtitle    font-weight-bold"
-                color="#3B6C39"
-                large
-                round
-                dark
-              >
-                Let’s talk
-              </v-btn>
-            </nuxt-link>
+            <v-btn
+              to="/contact"
+              class="subtitle font-weight-bold"
+              color="#3B6C39"
+              large
+              round
+              dark
+            >
+              Let’s talk
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>

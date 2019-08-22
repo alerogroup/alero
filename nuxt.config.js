@@ -1,5 +1,5 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-const pkg = require('./package')
+const siteConfig = require('./config/site')
 const analyticsID = 'UA-143741549-1'
 const siteUrl = 'https://www.alero.co.ke'
 require('dotenv').config()
@@ -8,37 +8,91 @@ require('dotenv').config()
 module.exports = {
   mode: 'universal',
 
+  watch: ['~/config/*'],
+
+  env: {
+    baseUrl:
+      process.env.NODE_ENV === 'production'
+        ? `${siteConfig.url}/`
+        : 'http://localhost:3000/'
+  },
   /*
    ** Headers of the page
    */
   head: {
     title: 'Alero Group',
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        content: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      },
+      {
+        'http-equiv': 'x-ua-compatible',
+        content: 'ie=edge'
       },
       {
         hid: 'description',
         name: 'description',
-        content: pkg.description
+        content: siteConfig.description
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Alero Group is a digital solution agancy'
+        hid: 'robots',
+        name: 'robots',
+        content:
+          siteConfig.index === false ? 'noindex,nofollow' : 'index,follow'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:site_name',
+        content: siteConfig.title
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: siteConfig.title
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content:
+          process.env.NODE_ENV === 'production'
+            ? `${siteConfig.url}/${siteConfig.ogImage}`
+            : `http://localhost:3000/${siteConfig.ogImage}`
+      },
+
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: siteConfig.description
+      },
+      {
+        hid: 'google-site-verification',
+        name: 'google-site-verification',
+        content: 'B_5KQRyRmfrcsYNjxPFRH6SbJxuCSQUzegVL44RePfo'
+      },
+
+      {
+        hid: 'google-site-verification',
+        name: 'google-site-verification',
+        content: 'VFBmJ73rVpSlREwokm_IiOWVjsQITOr1Hb-_R9IGheo'
       }
     ],
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
+        href:
+          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
       },
       {
         rel: 'stylesheet',
@@ -48,10 +102,9 @@ module.exports = {
   },
 
   /*
-   ** Customize the progress-bar color
+   ** Customize the progress-bar color */
 
-  loading: '~/components/loading.vue', */
-  loading: false,
+  loading: '~/components/loading.vue',
 
   /*
    ** Global CSS
@@ -74,7 +127,8 @@ module.exports = {
     [
       'nuxt-fontawesome',
       {
-        imports: [{
+        imports: [
+          {
             set: '@fortawesome/free-solid-svg-icons',
             icons: ['fas']
           },
