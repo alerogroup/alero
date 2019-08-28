@@ -1,9 +1,14 @@
 <template>
   <v-flex xs12 fluid>
-    <v-toolbar flat color="transparent">
+    <v-toolbar absolute color="white" height="80" class="elevation-2">
       <v-toolbar-title>
         <nuxt-link to="/home/">
-          <img src="../../assets/img/logo.svg" alt="alero logo" height="90" />
+          <img
+            src="../../assets/img/logo.svg"
+            alt="alero logo"
+            height="70"
+            class="ma-2"
+          />
         </nuxt-link>
       </v-toolbar-title>
       <v-spacer />
@@ -14,7 +19,7 @@
           </v-btn>
         </nuxt-link>
 
-      <!--   <nuxt-link to="/vodcast/" style="text-decoration:none;">
+       <!--  <nuxt-link to="/vodcast/" style="text-decoration:none;">
           <v-btn flat class="title font-weight-medium text-capitalize">
             Vodcast
           </v-btn>

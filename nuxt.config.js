@@ -12,16 +12,18 @@ module.exports = {
   watch: ['~/config/*'],
 
   env: {
-    baseUrl: process.env.NODE_ENV === 'production' ?
-      `${siteConfig.url}/` :
-      'http://localhost:3000/'
+    baseUrl:
+      process.env.NODE_ENV === 'production'
+        ? `${siteConfig.url}/`
+        : 'http://localhost:3000/'
   },
   /*
    ** Headers of the page
    */
   head: {
     title: 'Alero Group',
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -40,7 +42,8 @@ module.exports = {
       {
         hid: 'robots',
         name: 'robots',
-        content: siteConfig.index === false ? 'noindex,nofollow' : 'index,follow'
+        content:
+          siteConfig.index === false ? 'noindex,nofollow' : 'index,follow'
       },
       {
         property: 'og:type',
@@ -55,14 +58,6 @@ module.exports = {
         property: 'og:title',
         content: siteConfig.title
       },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: process.env.NODE_ENV === 'production' ?
-          `${siteConfig.url}/${siteConfig.ogImage}` :
-          `http://localhost:3000/${siteConfig.ogImage}`
-      },
-
       {
         hid: 'og:description',
         property: 'og:description',
@@ -80,14 +75,16 @@ module.exports = {
         content: 'VFBmJ73rVpSlREwokm_IiOWVjsQITOr1Hb-_R9IGheo'
       }
     ],
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
+        href:
+          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Material+Icons'
       },
       {
         rel: 'stylesheet',
@@ -119,21 +116,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-adsense',
-    '@nuxtjs/google-analytics',
-    [
-      'nuxt-fontawesome',
-      {
-        imports: [{
-            set: '@fortawesome/free-solid-svg-icons',
-            icons: ['fas']
-          },
-          {
-            set: '@fortawesome/free-brands-svg-icons',
-            icons: ['fab']
-          }
-        ]
-      }
-    ]
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** Axios module configuration

@@ -7,25 +7,56 @@
       color="transparent"
     >
       <v-card flat class="text-center" style="margin-left:3%">
+        <strong> &copy; </strong>
         {{ new Date().getFullYear() }}
         <strong> Alero Group Ltd.</strong>
       </v-card>
       <v-spacer />
 
-      <v-card flat class="text-center" style="margin-right:4%">
-        <a href="http://linkedin.com/company/alerogroup/">
-          <font-awesome-icon :icon="['fab', 'linkedin']" class="spac" />
-        </a>
-        <a href="https://www.facebook.com/alerogroup/">
-          <font-awesome-icon :icon="['fab', 'facebook-square']" class="spac" />
-        </a>
-        <a href="https://twitter.com/AleroGroup/">
-          <font-awesome-icon :icon="['fab', 'twitter-square']" class="spac" />
-        </a>
+      <v-card flat class="text-center" style="margin-right:2%">
+        <v-btn small icon href="http://linkedin.com/company/alerogroup/">
+          <img
+            :src="img1"
+            alt="connect with us on facebook"
+            height="17"
+            width="auto"
+          />
+        </v-btn>
+        <v-btn small icon href="https://www.facebook.com/alerogroup/">
+          <img
+            :src="img2"
+            alt="connect with us on facebook"
+            height="17"
+            width="auto"
+          />
+        </v-btn>
+        <v-btn small icon href="https://twitter.com/AleroGroup/">
+          <img
+            :src="img3"
+            alt="connect with us on facebook"
+            height="17"
+            width="auto"
+          />
+        </v-btn>
       </v-card>
     </v-footer>
   </v-card>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      img1:
+        'https://ik.imagekit.io/qpt2onjfe/alero/icons/linkedin_3-iXib_Ca.svg',
+      img2:
+        'https://ik.imagekit.io/qpt2onjfe/alero/icons/facebook-square_0r0XI50yXN.svg',
+      img3:
+        'https://ik.imagekit.io/qpt2onjfe/alero/icons/twitter-square_0oRKdpWSc.svg'
+    }
+  }
+}
+</script>
 
 <style scoped>
 .spac {
