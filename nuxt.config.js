@@ -150,11 +150,11 @@ module.exports = {
       stylus: {
         import: ['~assets/style/variables.styl']
       }
-    },
+    }
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
+    /*   extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -162,8 +162,8 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
-      }
+        }) 
     }
+     } */
   }
 }
