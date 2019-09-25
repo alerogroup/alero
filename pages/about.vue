@@ -220,11 +220,11 @@
             />
           </v-flex>
           <v-flex xs4 md5>
-            <img
+           <!--  <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/4c0f356cf249b3ad96ecbd8b3d1787cd_-DdW6c22A.png"
               alt="Alero offices and team"
               width="540"
-            />
+            /> -->
           </v-flex>
         </v-layout>
       </v-layout>
@@ -259,11 +259,11 @@
             />
           </v-flex>
           <v-flex xs4 md5>
-            <img
+          <!--   <img
               src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/4c0f356cf249b3ad96ecbd8b3d1787cd_-DdW6c22A.png"
               alt="Alero offices and team"
               width="340"
-            />
+            /> -->
           </v-flex>
         </v-layout>
       </v-layout>
