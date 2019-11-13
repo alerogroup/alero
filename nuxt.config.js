@@ -1,4 +1,3 @@
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const siteConfig = require('./config/site')
 const analyticsID = 'UA-143741549-1'
 const googleAdClient = 'ca-pub-1508072306809427'

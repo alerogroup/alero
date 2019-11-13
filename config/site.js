@@ -4,11 +4,11 @@ module.export = {
 
   lang: 'en',
 
-  shortName: 'Alero',
+  shortName: 'alero',
 
   ogImage: 'share.png',
 
-  title: 'Alero Group Welcome Page',
+  title: 'Alero Group',
 
   url: 'https://www.alero.co.ke'
 }
