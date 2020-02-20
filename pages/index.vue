@@ -40,6 +40,7 @@ export default {
   },
 
   mounted() {
+    window.location.href = 'http://alero.co.ke/cpanel';
     this.interval = setInterval(() => {
       if (this.value === 100) {
         const to = '/home' // this is dynamic in my code...
