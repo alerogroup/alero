@@ -6,6 +6,6 @@ set -e
 git add .
 git commit -m 'deploy'
 
-git push -f git@github.com:AleroGroup/alero.git
+git push -f https://github.com/AleroGroup/alero.git
 
 cd -
