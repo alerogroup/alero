@@ -11,6 +11,11 @@
         {{ new Date().getFullYear() }}
         <strong> Alero Group Ltd.</strong>
       </v-card>
+
+            <v-card to='/privacy-policy' flat class="text-center" style="margin-left:3%">
+        <div>Privacy policy</div>
+      </v-card>
+
       <v-spacer />
 
       <v-card flat class="text-center" style="margin-right:2%">

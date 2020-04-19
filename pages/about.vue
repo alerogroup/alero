@@ -340,12 +340,13 @@ export default {
 }
 
 .Image {
+  display: flex;
   position: absolute;
   top: 0;
   bottom: 0;
   z-index: -1;
-  height: 553px;
-  width: 1440px;
+  height: 65vh;
+  width: 100vw;
 }
 
 .mainPage {

@@ -28,6 +28,7 @@
     "nuxt": "^2.8.1",
     "sass-loader": "^7.1.0",
     "vue-analytics": "^5.17.2",
+    "vue-carousel": "^0.18.0",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"
   },

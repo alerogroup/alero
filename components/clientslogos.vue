@@ -2,67 +2,56 @@
   <v-layout column>
     <v-flex xs10 md4>
       <v-layout row align-center justify-center>
-        <v-card flat color="transparent" style="margin-left:15%;margin-top:2%;">
-          <nuxt-link to="/about/work/tejiri">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/ux_and_brand_board_Brand_Board_4e9ojq8FER.png"
-              width="190"
-            />
-          </nuxt-link>
-        </v-card>
-        <v-card flat color="transparent" style="margin-left:15%;margin-top:1%;">
-          <nuxt-link to="/el">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/EL-Logo-SMALL_zdi9xwOnZs.png"
-              width="250"
-            />
-          </nuxt-link>
-        </v-card>
-        <v-card flat color="transparent" style="margin-left:15%;margin-top:1%;">
-          <a href="#">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/favicon_WYW7Zq86Rr.png"
-              width="110"
-            />
+        <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="https://sqika.com/" target="_blank">
+            <img src="../assets/img/files/sqkika.png" width="100">
           </a>
         </v-card>
-      </v-layout>
-    </v-flex>
-    <!---->
-    <v-flex xs10 md4>
-      <v-layout row align-center justify-center>
-        <v-card flat color="transparent" style="margin-left:12%;margin-top:9%;">
-          <nuxt-link to="greatminds">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/Image_2_zUCqanYRr3.png"
-              width="150"
-            />
-          </nuxt-link>
+        <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="https://locifoods.co.ke" target="_blank">
+            <img src="../assets/img/files/locifood.png" width="60">
+          </a>
         </v-card>
-        <v-card flat color="transparent" style="margin-left:12%;margin-top:9%;">
-          <nuxt-link to="/celebuddy">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/logo_w600_3r_ntticc.png"
-              width="150"
-            />
-          </nuxt-link>
+        <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="https://brickcom.netlify.app/" target="_blank">
+            <img src="../assets/img/files/brickcom.png" width="100">
+          </a>
         </v-card>
-        <v-card flat color="transparent" style="margin-left:12%;margin-top:9%;">
-          <nuxt-link to="/akilisavvy">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/Group_311_wxrtBYPLC.png"
-              width="150"
-            />
-          </nuxt-link>
         </v-card>
-        <v-card flat color="transparent" style="margin-left:12%;margin-top:9%;">
-          <nuxt-link to="/sweetcakes">
-            <img
-              src="https://ik.imagekit.io/qpt2onjfe/alero/WelcomePage/logo-small_KhwXu-VMmk.png"
-            />
-          </nuxt-link>
+        <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="https://fes.netlify.app/" target="_blank">
+            <img src="../assets/img/files/fes.png" width="100">
+          </a>
+        </v-card>
+        </v-card>
+        <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="#">
+            <img src="../assets/img/files/Akilisavvy.png" width="100">
+          </a>
+        </v-card>
+         <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="#">
+            <img src="../assets/img/files/EL.png" width="100">
+          </a>
+        </v-card>
+         <v-card flat color="transparent" style="margin-left:12%;margin-top:4%;">
+          <a href="#">
+            <img src="../assets/img/files/logo__gray.png" width="100">
+          </a>
         </v-card>
       </v-layout>
     </v-flex>
   </v-layout>
 </template>
+
+<script>
+  // import { Carousel, Slide } from 'vue-carousel'
+
+  // export default {
+  //   components: {
+  //     Carousel,
+  //     Slide
+  //   }
+  // }
+
+</script>
