@@ -69,7 +69,7 @@
       </v-layout>
     </v-layout>
 
-    <v-layout row justify-center align-center text-center>
+    <!-- <v-layout row justify-center align-center text-center>
       <v-card width="100vw" height="70vh" color="#2D7507">
         <v-layout row align-center justify-center>
           <img
@@ -88,7 +88,7 @@
           </v-layout>
         </v-layout>
       </v-card>
-    </v-layout>
+    </v-layout> -->
     <TalktoUs />
   </v-content>
 </template>
