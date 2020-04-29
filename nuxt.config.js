@@ -2,7 +2,7 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const siteConfig = require('./config/site')
 const analyticsID = 'UA-143741549-1'
 const googleAdClient = 'ca-pub-1508072306809427'
-const siteUrl = 'https://www.alero.co.ke'
+
 
 require('dotenv').config()
 
@@ -14,10 +14,7 @@ module.exports = {
   watch: ['~/config/*'],
 
   env: {
-    baseUrl:
-      process.env.NODE_ENV === 'production'
-        ? `${siteConfig.url}/`
-        : 'http://localhost:3000/'
+    baseUrl: 'http://localhost:3000/'
   },
   /*
    ** Headers of the page
