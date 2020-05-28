@@ -35,16 +35,30 @@
           </v-card>
           <v-layout row column class="mb-6 my-9 mx-12">
             <ul class="row v-list font-weight-medium">
-              <li class="ma-4">Why Alero? </li>
-              <li class="ma-4"> Contact Us </li>
+              <li class="ma-4">
+                Why Alero?
+              </li>
+              <li class="ma-4">
+                Contact Us
+              </li>
             </ul>
             <div class="ml-4">
-              <v-icon class="ml-2" color="aleroblack">
-                mdi-facebook
-              </v-icon>
-              <v-icon class="ml-4" color="aleroblack">
-                mdi-linkedin
-              </v-icon>
+              <v-btn href="https://web.facebook.com/alerogroup" target="_blank" icon>
+                <v-icon  class="ml-4" color="aleroblack">
+                  bx bxl-facebook-circle
+                </v-icon>
+              </v-btn>
+
+              <v-btn icon>
+                <v-icon class="ml-4" color="aleroblack">
+                  bx bxl-linkedin
+                </v-icon>
+              </v-btn>
+              <v-btn href="https://www.behance.net/AleroGroup" target="_blank" icon>
+                <v-icon class="ml-4" color="aleroblack">
+                  bx bxl-behance
+                </v-icon>
+              </v-btn>
             </div>
           </v-layout>
         </v-flex>
