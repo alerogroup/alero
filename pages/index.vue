@@ -28,7 +28,7 @@
                 single-line
                 outlined
               />
-              <v-btn type="submit" x-large class="ml-4 caption font-weight-medium" color="aleroblack" dark>
+              <v-btn type="submit" large class="ml-3 caption font-weight-medium" color="aleroblack" dark>
                 Join waitlist
               </v-btn>
             </form>
@@ -44,11 +44,10 @@
             </ul>
             <div class="ml-4">
               <v-btn href="https://web.facebook.com/alerogroup" target="_blank" icon>
-                <v-icon  class="ml-4" color="aleroblack">
+                <v-icon class="ml-4" color="aleroblack">
                   bx bxl-facebook-circle
                 </v-icon>
               </v-btn>
-
               <v-btn href="https://www.linkedin.com/company/alerogroup/" target="_blank" icon>
                 <v-icon class="ml-4" color="aleroblack">
                   bx bxl-linkedin
