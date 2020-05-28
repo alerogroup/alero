@@ -19,7 +19,7 @@
             <v-card-text class="body mt-4">
               Working hard to give you a better experience with our new impressive site. We will be launching soon, stay connected with us and get updated.
             </v-card-text>
-            <form name="contact" class="row ma-4 align-center" netlify>
+            <form name="contact" class="col ma-1 align-center" netlify>
               <v-text-field
                 name="email"
                 label="enter your email address"
@@ -28,7 +28,7 @@
                 single-line
                 outlined
               />
-              <v-btn type="submit" large class="ml-3 caption font-weight-medium" color="aleroblack" dark>
+              <v-btn type="submit" large class="mt-4 caption font-weight-medium" color="aleroblack" dark>
                 Join waitlist
               </v-btn>
             </form>
