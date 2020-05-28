@@ -49,7 +49,7 @@
                 </v-icon>
               </v-btn>
 
-              <v-btn icon>
+              <v-btn href="https://www.linkedin.com/company/alerogroup/" target="_blank" icon>
                 <v-icon class="ml-4" color="aleroblack">
                   bx bxl-linkedin
                 </v-icon>
