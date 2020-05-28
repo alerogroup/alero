@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-layout
-      row
       class="background"
       style="height:100vh"
       hidden-md-and-down
@@ -34,6 +33,20 @@
               </v-btn>
             </form>
           </v-card>
+          <v-layout row column class="mb-6 my-9 mx-12">
+            <ul class="row v-list font-weight-medium">
+              <li class="ma-4">Why Alero? </li>
+              <li class="ma-4"> Contact Us </li>
+            </ul>
+            <div class="ml-4">
+              <v-icon class="ml-2" color="aleroblack">
+                mdi-facebook
+              </v-icon>
+              <v-icon class="ml-4" color="aleroblack">
+                mdi-linkedin
+              </v-icon>
+            </div>
+          </v-layout>
         </v-flex>
       </v-layout>
       <v-flex
@@ -51,7 +64,7 @@
     <v-layout
       column
       class="background"
-      style="height:100vh"
+      style="height:80vh"
       hidden-lg-and-up
     >
       <v-flex>
@@ -107,5 +120,8 @@
   font-size: 18px;
   line-height: 133.7%;
   color: #405544;
+}
+.v-list {
+  list-style: none;
 }
 </style>
