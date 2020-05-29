@@ -64,4 +64,7 @@ export default {
   font-size: 100px !important;
  line-height: 102.2%;
 }
+.background{
+  background-color:#F2DF9E !important;
+}
 </style>
