@@ -92,7 +92,7 @@
     >
       <v-flex>
         <v-layout justify-center align-center mt-3>
-          <img width="330vw" :src="require('../static/07 1.png')">
+          <!-- <img width="330vw" :src="require('../static/07 1.png')"> -->
         </v-layout>
       </v-flex>
 

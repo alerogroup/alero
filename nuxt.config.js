@@ -13,6 +13,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Alero Website Develpoment' },
       { hid: 'og:title', name: 'og:title', content: 'Alero Group' },
+      { hid: 'og:description', name: 'og:description', content: 'Alero Website Develpoment' },
+      { hid: 'og:locale', content: 'en_KE' },
       { hid: 'og:description', name: 'og:description', content: 'Alero Website Develpoment' }
     ],
     link: [
