@@ -30,7 +30,7 @@
             </div>
           </v-card>
           <div class="mt-12 text-center mr-6">
-            <span class="ml-3 font-weight-medium">Follow Us</span> <br />
+            <span class="ml-3 font-weight-medium">Follow Us</span> <br>
             <v-btn href="https://web.facebook.com/alerogroup" target="_blank" icon>
               <v-icon class="ml-4" color="aleroblack">
                 bx bxl-facebook-circle

@@ -19,7 +19,14 @@
             <v-card-text class="body mt-4">
               Working hard to give you a better experience with our new impressive site. We will be launching soon, stay connected with us and get updated.
             </v-card-text>
-            <form name="contact" class="col ma-1 align-center" netlify>
+            <form
+              name="contact"
+              class="col ma-1 align-center"
+              netlify-honeypot="bot-field"
+              method="POST"
+              action="/success/"
+              netlify
+            >
               <v-text-field
                 name="email"
                 label="enter your email address"
