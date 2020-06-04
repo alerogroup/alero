@@ -6,7 +6,7 @@
           <img width="200" class="ml-12" :src="require('../static/icon.svg')">
         </nuxt-link>
         <v-spacer />
-        <v-btn to="/" text>
+        <!-- <v-btn to="/" text>
           Home
         </v-btn>
         <v-btn to="/" text>
@@ -17,7 +17,7 @@
         </v-btn>
         <v-btn to="/" text>
           Blog
-        </v-btn>
+        </v-btn> -->
       </v-app-bar>
 
       <v-app-bar flat height="90" class="background hidden-lg-and-up">
