@@ -65,10 +65,10 @@ export default {
   data () {
     return {
       items: [
-        { title: 'Home', path: '/' },
-        { title: 'About', path: '/' },
-        { title: 'Contacts', path: '/' },
-        { title: 'Blog', path: '/blog' }
+        { title: 'Home', path: '/' }
+        // { title: 'About', path: '/' },
+        // { title: 'Contacts', path: '/' },
+        // { title: 'Blog', path: '/blog' }
       ]
     }
   }
