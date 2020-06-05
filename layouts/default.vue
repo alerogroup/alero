@@ -26,7 +26,7 @@
             <img width="200" :src="require('../static/icon.svg')">
           </nuxt-link>
           <v-spacer />
-          <v-menu class="px-auto" transition="slide-y-transition" :nudge-width="400">
+          <!-- <v-menu class="px-auto" transition="slide-y-transition" :nudge-width="400">
             <template v-slot:activator="{ on }">
               <v-btn
                 color="black"
@@ -49,7 +49,7 @@
                 </v-list-item-title>
               </v-list-item>
             </v-list>
-          </v-menu>
+          </v-menu> -->
         </v-layout>
       </v-app-bar>
 
