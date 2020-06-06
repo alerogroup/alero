@@ -44,9 +44,6 @@
             <ul class="v-list font-weight-medium">
               <v-layout row>
                 <li class="ma-4">
-                  Why Alero?
-                </li>
-                <li class="ma-4">
                   Contact Us
                 </li>
               </v-layout>
@@ -54,17 +51,17 @@
 
             <div class="ml-4">
               <v-btn href="https://web.facebook.com/alerogroup" target="_blank" icon>
-                <v-icon class="ml-4" color="aleroblack">
+                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">
                   bx bxl-facebook-circle
                 </v-icon>
               </v-btn>
               <v-btn href="https://www.linkedin.com/company/alerogroup/" target="_blank" icon>
-                <v-icon class="ml-4" color="aleroblack">
+                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">>
                   bx bxl-linkedin
                 </v-icon>
               </v-btn>
               <v-btn href="https://www.behance.net/AleroGroup" target="_blank" icon>
-                <v-icon class="ml-4" color="aleroblack">
+                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">>
                   bx bxl-behance
                 </v-icon>
               </v-btn>
@@ -154,5 +151,8 @@
 }
 .v-btn:before {
   display: none;
+}
+.aleroblack {
+  background-color: #231F20
 }
 </style>
