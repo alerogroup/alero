@@ -7,15 +7,18 @@ export default {
   */
   head: {
     titleTemplate: '%s - ' + 'Welcome',
-    title: 'Alero Group' || 'New Website',
+    title: 'Alero: Web and Mobile Development Company in Kenya' || 'New Website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Alero Website Develpoment' },
-      { hid: 'og:title', name: 'og:title', content: 'Alero Group' },
-      { hid: 'og:description', name: 'og:description', content: 'Alero Website Develpoment' },
+      { hid: 'description', name: 'description', content: 'Agile web and mobile development team building Nodejs, Vuejs, NUXT, React and React Native applications for startups and enterprises. Let&#39;s talk!' },
+      { hid: 'og:title', name: 'og:title', content: 'Alero: Web and Mobile Development Company in Kenya' },
+      { hid: 'og:description', name: 'og:description', content: 'Agile web and mobile development team building Nodejs, Vuejs, NUXT, React and React Native applications for startups and enterprises. Let&#39;s talk!' },
       { hid: 'og:locale', content: 'en_KE' },
-      { hid: 'og:description', name: 'og:description', content: 'Alero Website Develpoment' }
+      { hid: 'og:description', name: 'og:description', content: 'Alero Website Develpoment' },
+      { hid: 'og:url', content: 'https://alero.co.ke' },
+      { hid: 'og:site_name', content: 'Alero Group' },
+      { hid: 'article:publisher', content: 'https://www.facebook.com/alerogroup' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -44,10 +47,12 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify'
   ],
-  // googleAnalytics: {
-  //   id: "UA-143741549-1",
-  //   dev: false
-  // },
+
+  googleAnalytics: {
+    id: 'UA-143741549-1',
+    dev: false
+  },
+
   /*
   ** Nuxt.js modules
   */
@@ -59,7 +64,7 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/sitemap'
   ],
-/*
+  /*
   ** Sitemap
   */
   sitemap: {
@@ -70,10 +75,11 @@ export default {
     generate: false,
     routes: [
       '/',
-      '/about'
+      '/about',
+      '/blog'
     ].map(route => ({
       url: route,
-      changefreq: 'monthly',
+      changefreq: 'daily',
       priority: 1,
       lastmodISO: new Date().toISOString().split('T')[0]
     }))
