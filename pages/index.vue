@@ -56,12 +56,12 @@
                 </v-icon>
               </v-btn>
               <v-btn href="https://www.linkedin.com/company/alerogroup/" target="_blank" icon>
-                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">>
+                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">
                   bx bxl-linkedin
                 </v-icon>
               </v-btn>
               <v-btn href="https://www.behance.net/AleroGroup" target="_blank" icon>
-                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">>
+                <v-icon class="ml-4" color="aleroblack" style="color:#231F20">
                   bx bxl-behance
                 </v-icon>
               </v-btn>
@@ -132,7 +132,7 @@
 //   }
 // }
 </script>
-<style lang="css" scoped>
+<style>
 .display-4 {
   font-size: 90px !important;
  line-height: 102.2%;
